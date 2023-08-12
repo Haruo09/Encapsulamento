@@ -1,14 +1,17 @@
 package exercicios.ex1.classes;
 
 public class ContaBancaria {
+    // Atributos:
     private double saldo;
     private String titular;
 
+    // Construtor:
     public ContaBancaria(double saldo, String titular) {
         this.saldo = saldo;
         this.titular = titular;
     }
 
+    // Método de impressão:
     public String toString() {
         return String.format(
             """
@@ -20,6 +23,7 @@ public class ContaBancaria {
         );
     }
 
+    // Métodos da classe:
     public void depositar(double valor) {
         this.saldo += valor;
     }
