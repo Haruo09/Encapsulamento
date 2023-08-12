@@ -16,14 +16,16 @@ public class Retangulo {
     public String toString() {
         return String.format(
             """
-            Retângulo ========
-            Altura: %.2f
-            Largura: %.2f
-            Área: %.2f
-            Perímetro: %.2f
+            Retângulo ======== 
+            Altura: %.2f u.a
+            Largura: %.2f u.a
+            Área: %.2f u.a²
+            Perímetro: %.2f u.a
             """,
             this.altura, this.largura, this.getArea(), this.getPerimetro()
         );
+
+        // u.a = unidade de área
     }
 
     // Métodos públicos:

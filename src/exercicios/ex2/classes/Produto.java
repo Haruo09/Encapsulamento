@@ -11,6 +11,18 @@ public class Produto {
         this.estoque = estoque;
     }
 
+    public String toString() {
+        return String.format(
+            """
+            Produto ==================
+            Nome: %s
+            Preço: R$%,.2f
+            Qtd. em Estoque: %,d
+            """,
+            this.nome, this.preco, this.estoque
+        );
+    }
+
     public void setEstoque(int estoque) {
         this.estoque = estoque;
     }
